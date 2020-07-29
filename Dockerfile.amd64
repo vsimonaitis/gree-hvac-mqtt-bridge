@@ -1,3 +1,4 @@
+# Set the base image
 FROM node:alpine
 
 ENV LANG C.UTF-8
