@@ -12,8 +12,8 @@ COPY --from=builder qemu-arm-static /usr/bin
 
 ENV LANG C.UTF-8
 
-RUN apk add --no-cache jq nodejs nodejs-npm && \
-npm set unsafe-perm true
+RUN apk add --no-cache jq nodejs nodejs-npm
+RUN npm set unsafe-perm true
 
 # Copy data for add-on
 WORKDIR /usr/src/app
